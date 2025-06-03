@@ -1,6 +1,8 @@
-document.querySelectorAll(".svg-icon").forEach(icon => {
+const icons = document.querySelectorAll(".svg-icon");
+
+icons.forEach(icon => {
   icon.addEventListener("click", () => {
-    const id = icon.id;
-    console.log(`🔥 You clicked the icon with ID: ${id}`);
+    const iconId = icon.id;
+    console.log(`🖱️ You clicked the icon with ID: ${iconId}`);
   });
 });
